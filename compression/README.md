@@ -20,15 +20,15 @@ Input: "this is an example of a huffman tree"
 
 1. Constructing a char-frequency table:
 
-![char-frequency-table](./resources/images/char-frequency-table.png)
+![char-frequency-table](../resources/images/char-frequency-table.png)
 
 2. Constructing a Huffman tree:
 
-![huffman-tree](./resources/images/huffman-tree.png)
+![huffman-tree](../resources/images/huffman-tree.png)
 
 3. Constructing a char-binary representation table:
 
-![char-binary-table](./resources/images/char-binary-representation.png)
+![char-binary-table](../resources/images/char-binary-representation.png)
 
 4. Replace every char from the input data with its binary code representation:
 
@@ -54,7 +54,7 @@ Input: "AAAAADDDDDDDCBBBBBB"
 1. Iterate through the data and count char frequencies.
 2. Append the char + occurrences to the output data.
 
-![run-length-encoding](./resources/images/run-length-encoding.png)
+![run-length-encoding](../resources/images/run-length-encoding.png)
 
 Output: A5D7CB8
 
