@@ -10,11 +10,11 @@ The main concept of the algorithm is to generate a random number based on some f
 An image (gray scale) generated through the Value Noise algorithm, notice how everything looks so smooth:
 
 
-![web-example](./resources/images/value-noise-web-example.png)
+![web-example](../resources/images/value-noise-web-example.png)
 
 Minecraft uses a noise algorithm for the terrain generation:
 
-![minecraft-example](./resources/images/minecraft-value-noise-example.png)
+![minecraft-example](../resources/images/minecraft-value-noise-example.png)
 
 Steps:
 1. The main grid (drawing plane, square, quadrant e.t.c) is divided into several smaller grids and at the corner of every small grid there is a "main" point.
@@ -31,5 +31,5 @@ We do the steps above and we end up with a value array (matrix) that is ready to
 
 The result of the value-noise.py program - 10x10, 100x100 and 500x500 arrays (fancy visualised).
 
-![my-example](./resources/images/value-noise.png)
+![my-example](../resources/images/value-noise.png)
 
