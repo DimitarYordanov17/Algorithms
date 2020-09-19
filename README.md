@@ -30,7 +30,7 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
 
             Dependencies: random, numpy, sympy, matplotlib.pyplot
 
-      - Cluster Analysis
+      - Cluster Analysis (K-means and Hierarchial clustering)
 
             Dependencies: numpy, matplotlib.pyplot
 
