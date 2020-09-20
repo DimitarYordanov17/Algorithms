@@ -10,7 +10,7 @@ A simple tree-like structure, where each branch produces 2 others which are unde
 
 Example:
 
-![fractal-tree](./resources/images/fractal-tree.png)
+![fractal-tree](../resources/images/fractal-tree.png)
 
 ## 2. Koch snowflake
 
@@ -18,4 +18,4 @@ A snowflake-like structure, where every part is a little snowflake too :D
 
 Example:
 
-![koch-snowflake](./resources/images/koch-snowflake.png)
+![koch-snowflake](../resources/images/koch-snowflake.png)
