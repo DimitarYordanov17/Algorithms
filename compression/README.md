@@ -24,7 +24,7 @@ Input: "this is an example of a huffman tree"
 
 2. Constructing a Huffman tree:
 
-![huffman-tree](../resources/images/huffman-tree.png)
+<img src="../resources/images/huffman-tree.png" height="50%" width="50%">
 
 3. Constructing a char-binary representation table:
 
