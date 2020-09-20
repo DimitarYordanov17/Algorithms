@@ -17,7 +17,7 @@ E.g. 1, 2, 3, 5, 6, 4, considering our current element is 4 we go until we reach
 
 Example:
 
-![insertion-sort](./resources/images/insertion-sort.png)
+![insertion-sort](../resources/images/insertion-sort.png)
 
 
 # 2. Selection sort
@@ -32,4 +32,4 @@ Steps:
 
 Example:
 
-<img src="./resources/images/selection-sort.png" height="50%" width="50%">
+<img src="../resources/images/selection-sort.png" height="50%" width="50%">
