@@ -28,4 +28,4 @@ Output: 1D dataset
 
 Example:
 
-![pca](./resources/images/pca.png)
+![pca](../resources/images/pca.png)
