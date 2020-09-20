@@ -28,7 +28,7 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
 
       - Principal Component Analysis (2D)
 
-            Dependencies: random, numpy, sympy, matplotlib.pyplot
+            Dependencies: random, numpy, sympy, matplotlib.pyplot, math
 
       - Cluster Analysis (K-means and Hierarchial clustering)
 
