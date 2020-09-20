@@ -9,24 +9,24 @@ this way it is very hard for an attacker to break the cipher (encrypted data). T
 
 What a round of AES looks like:
 
-![aes-round](./resources/images/aes-round.png)
+![aes-round](../resources/images/aes-round.png)
 
 Predefined functions:
 1. AddRoundKey - each byte from the main 128-bit block is "xor-ed" with another 128-bit block derived from the AES key schedule.
 
-<img src="./resources/images/add-round-key.png" height="50%" width="50%">
+<img src="../resources/images/add-round-key.png" height="50%" width="50%">
 
 2. SubBytes - each byte from the main 128-bit block is replaced with another one found in a premade look-up table.
 
-<img src="./resources/images/sub-bytes.png" height="50%" width="50%">
+<img src="../resources/images/sub-bytes.png" height="50%" width="50%">
 
 3. ShiftRows - the last three rows from the main 128-bit block are shifted, depending on the row number.
 
-<img src="./resources/images/shift-rows.png" height="50%" width="50%">
+<img src="../resources/images/shift-rows.png" height="50%" width="50%">
 
 4. MixColumns - an operation, working on the columns of the main 128-bit block, used to mix the bytes linearly.
 
-<img src="./resources/images/mix-columns.png" height="50%" width="50%">
+<img src="../resources/images/mix-columns.png" height="50%" width="50%">
 
 Steps:
 1. Divide the whole message into 128 bit (16 chars/bytes) blocks.
@@ -62,7 +62,7 @@ without the risk of an attacker (sniffing the network for example) to find out.
 This picture demonstrates a sample Diffie-Hellman between two users - Alice and Bob. In this case, the key is a color so it is kind of easy to find out the two colors that formed it,
 but with numbers it is much much harder:
 
-![diffie-hellman](./resources/images/diffie-hellman.png)
+![diffie-hellman](../resources/images/diffie-hellman.png)
 
 Steps: (We are going to use Alice and Bob for the normal users and Eve for the attacker)
 1. Alice and Bob agree on two common numbers P and G and store them (Eve also gets these numbers because they are transported via the network as a plain text).
