@@ -46,6 +46,11 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
       - Value Noise
 
             Dependencies: random, numpy, matplotlib.pyplot, matplotlib.image
+6. Maths
+
+      - Taylor series
+      
+            Dependencies: sympy, math
 
 6. Sorting
 
