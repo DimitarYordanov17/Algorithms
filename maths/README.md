@@ -1,6 +1,6 @@
-# Mathematics algorithms
+# Mathematical algorithms
 
-### Mathematical formulas and concepts, represented in a computer way.
+### Famous formulas and concepts.
 
 ## 1. Taylor Series
 
@@ -10,6 +10,6 @@ the function to be differentiable at a certain interval.
 
 The main formula for calculating the Taylor series representation of a given function:
 
-![taylor-series](./resources/images/taylor-series.jpg)
+![taylor-series](../resources/images/taylor-series.jpg)
 
 whereas x0 is the center of approximation and f`n(x) are the derivatives of the original function 
