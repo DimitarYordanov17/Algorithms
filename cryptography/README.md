@@ -90,3 +90,49 @@ Example:
 
 Unless Eve owns a quantum computer, it would be hard for their side to break the connection (Well, if somebody in your network really owns a quantum computer or
 just a fast enough one, then I am worried about you :D).
+
+## 3. Message Digest 5 (MD5)
+
+Message digest 5 is simply a hash function. The algorithm is used in cryptography (for storing passwords) and in networking (data integrity). The algorithm
+takes input of any length and produces a fixed length (32) hex characters hash. Again, we use the secure property of function invertibility - a.k.a we know that f(x) is producing y, but we are not sure in the x value in f(x) inverted. There are two main steps - modifiyng the input text and doing some calculations based on it.
+
+A good use of MD5 is to check if a file has been transmitted correctly between two parties. We simply hash the file before it is sent, and we ask for the party that received the file to hash it too and we compare both output hashes. (Basically you can think of the hash of a file as its fingerprint).
+
+![md5-transmission](../resources/images/md5-transmission.png)
+
+Down below is a good graphical representation of the algorithm
+
+![md5](../resources/images/md5.png)
+
+Steps:
+1. Initialize 4 buffers (A, B, C, D) - constants
+2. Initialize a bit representation of the input text
+3. Append one 1 bit and add 0s till the length of the bit representation satisifes this: length % 512 = 448
+4. Append the length of the input text as a 64 bit number
+5. Divide all the bits into 512 bit blocks
+6. For every 512 block do 4 rounds, consisted of 16 operations \\/:
+
+![md5-round](../resources/images/md5-round.png)
+
+7. When the last block is processed represent the buffers as hex values and append them to each other to get the resulting 32 hex character hash
+
+Example:
+
+Input 1: "Hello, I implemented this algorithm on 11/23/2020 for several hours and I am happy about it"
+
+Input 2: "Hello, I implemented this algorithm on 11/23/2020 for several hours and I am happy about it."
+
+Output 1: "884dc0121a6cfec5ca9005c8e4495a53"
+
+Output 2: "96ce656125b9e8e29d2158973cca058a"
+  
+Here you can see the avalanche effect (which is a good property of the MD5) - we added just a dot in the input and the output hash changed a lot
+
+We must note that:
+Consider two inputs - messsage1 and message2. Now consider the hashes of the inputs. If the inputs result in the same hash then we have a HASH COLLISION.
+This is a vulnerability of the algorithm since we can make use of equal "fingerprints" and different files. It is easy to find hash collision due to the birthday problem
+which is not going to be explained but you can read more about breaking MD5 here:
+
+https://www.mscs.dal.ca/~selinger/md5collision/
+
+!DISCLAIMER! The algorithm should not be used in any real situation since nowadays MD5 is inefficient and breakable. !DISCLAIMER! 
