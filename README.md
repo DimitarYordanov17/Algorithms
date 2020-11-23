@@ -23,6 +23,10 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
       - Diffie-Hellman key exchange
 
             Dependencies: math, time, random
+            
+      - Message Digest 5 (MD5)
+      
+            Dependencies: math, numpy, random
 
 3. Data science
 
