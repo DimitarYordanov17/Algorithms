@@ -4,7 +4,14 @@
 
 At the end of every algorithm, there is driver (example) code to demonstrate the algorithm
 
-1. Compression
+1. Artificial intelligence
+
+      - MiniMax (TicTacToe) (Cannot be considered as an exact A.I. algorithm, more of a Maths one)
+      
+            Dependencies: tictactoeaddons.py, copy, inspect
+
+
+2. Compression
 
       - Huffman compression (coding)
 
@@ -14,7 +21,7 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
 
             Dependencies: re (Regex)
 
-2. Cryptography 
+3. Cryptography 
 
       - Advanced Encryption Standard (Rijndael)
 
@@ -28,7 +35,7 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
       
             Dependencies: math, numpy, random
 
-3. Data science
+4. Data science
 
       - Principal Component Analysis (2D)
 
@@ -38,25 +45,25 @@ At the end of every algorithm, there is driver (example) code to demonstrate the
 
             Dependencies: numpy, matplotlib.pyplot
 
-4. Drawing (Fractals)
+5. Drawing (Fractals)
 
         Dependencies: turtle
 
       - Fractal Tree
       - Koch Snowflake
 
-5. Graphics
+6. Graphics
 
       - Value Noise
 
             Dependencies: random, numpy, matplotlib.pyplot, matplotlib.image
-6. Maths
+7. Maths
 
       - Taylor series
       
             Dependencies: sympy, math
 
-6. Sorting
+8. Sorting
 
         Dependencies: unittest (just for the tests)
 
